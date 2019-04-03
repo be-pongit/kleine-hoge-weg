@@ -1,0 +1,115 @@
+appartementGelijkvloers:
+  - code: C 1.0
+    dimensions: 101 m² + garage 32 m² + tuin 55 m²
+    rooms: 2
+    price: 289 000
+    slug: appartement-gelijkvloers-1
+
+  - code: C 2.0
+    dimensions: 99 m² + garage 27 m² + tuin  57 m²
+    rooms: 2
+    price: 289 000
+    slug: appartement-gelijkvloers-2
+
+  - code: C 3.0
+    dimensions: 97 m² + garage 30 m² + tuin 56 m²
+    rooms: 2
+    price: 289 000
+    slug: appartement-gelijkvloers-3
+
+  - code: C 4.0
+    dimensions: 97 m² + garage 27 m² + tuin 110 m²
+    rooms: 2
+    price:
+    slug: appartement-gelijkvloers-4
+
+
+
+
+appartementEersteVerdiep:
+  - code: C 1.1
+    dimensions: 96 m² + garage 26 m² + terras 25 m²
+    rooms: 2 of 3
+    price:
+    slug: appartement-eerste-verdiep-1
+
+  - code: C 2.1
+    dimensions: 96 m² + garage 18 m² + terras 24 m²
+    rooms: 2 of 3
+    price:
+    slug: appartement-eerste-verdiep-2
+
+  - code: C 3.1
+    dimensions: 96 m² + garage 18 m² + terras 22 m²
+    rooms: 2 of 3
+    price:
+    slug: appartement-eerste-verdiep-3
+
+  - code: C 4.1
+    dimensions: 96 m² + garage 26 m² + terras 21 m²
+    rooms: 2 of 3
+    price:
+    slug: appartement-eerste-verdiep-4
+
+
+
+
+
+woningenHalfOpen:
+  - code: D 1
+    dimensions: gelijkvloers 61 m², eerste verdiep 61 m² ( 3 slpkm ) + carport / tuin 104 m²
+    rooms: 3
+    price:
+    slug: half-open-woning-1
+
+  - code: D 2
+    dimensions: gelijkvloers 61 m², eerste verdiep 61 m² ( 3 slpkm )  + carport / tuin 94 m²
+    rooms: 3
+    price:
+    slug: half-open-woning-2
+
+  - code: D 3
+    dimensions: gelijkvloers 61 m², eerste verdiep 61 m² ( 3 slpkm )  + carport / tuin 94 m²
+    rooms: 3
+    price:
+    slug: half-open-woning-3
+
+  - code: D 4
+    dimensions: gelijkvloers 61 m², eerste verdiep 61 m² ( 3 slpkm )  + carport / tuin 112 m²
+    rooms: 3
+    price:
+    slug: half-open-woning-4
+
+
+
+woningenRij:
+  - code: B 1
+    dimensions: gelijkvloers 57,8 m², eerste verdiep 57,8 m² ( 2 slpkm )  + carport / tuin 48 m²
+    rooms: 2
+    price:
+    slug: rijwoning-1
+
+  - code: B 2
+    dimensions: gelijkvloers 48 m², eerste verdiep 65 m² ( 3 slpkm )  + garage 19 m² + tuin 28 m²
+    rooms: 3
+    price:
+    slug: rijwoning-2
+
+  - code: B 3
+    dimensions: gelijkvloers 47 m², eerste verdiep 65 m² ( 3 slpkm )  + garage 19 m² + tuin 28 m²
+    rooms: 3
+    price:
+    slug: rijwoning-3
+
+
+  - code: B 4
+    dimensions: gelijkvloers 47 m², eerste verdiep 65 m² ( 3 slpkm )  + garage 19 m² + tuin 28 m²
+    rooms: 3
+    price:
+    slug: rijwoning-4
+
+  - code: B 5
+    dimensions: gelijkvloers 48 m², eerste verdiep 67 m² ( 3 slpkm )  + garage 19 m² + tuin 28 m²
+    rooms: 3
+    price:
+    slug: rijwoning-5

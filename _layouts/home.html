@@ -3,32 +3,38 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <h1>Kleine Hoge Weg beschrijving</h1>
 
-  {{ content }}
+  <div class="home-desc row">
+    <div class="col-md">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, set eiusmod tempor incidunt et labore et dolore magna aliquam.
+      Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse molestaie cillum. Tia non ob ea soluad incommod quae egen ium improb
+      fugiend. Officia deserunt mollit anim id est laborum Et harumd dereud facilis est er expedit distinct. Nam liber te conscient
+      to factor tum poen legum odioque civiuda et tam. Neque pecun modut est neque nonor et imper ned libidig met, consectetur
+      µadipiscing elit, sed ut labore et dolore magna aliquam is nostrud exercitation ullam mmodo consequet. Duis aute in
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. At vver eos et accusam dignissum qui blandit est praesent.
+      Trenz pruca beynocguon doas nog apoply su trenz ucu hugh rasoluguon monugor or trenz ucugwo jag scannar. Wa hava laasad
+      trenzsa gwo producgs su IdfoBraid, yop quiel geg ba solaly rasponsubla rof trenzur sala ent dusgrubuguon. Offoctivo
+      immoriatoly, hawrgasi pwicos asi sirucor. Thas sirutciun applios tyu thuso itoms ghuso pwicos gosi sirucor in mixent
+    </div>
+    <div class="col-md">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.0411859239102!2d4.015842551140046!3d50.86743726501163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3bcac2c2fa677%3A0xea186702758681dd!2sNinoofsesteenweg+22%2C+9450+Haaltert!5e0!3m2!1sen!2sbe!4v1554314366194!5m2!1sen!2sbe" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+  {% include detail-table.html title="4 stapelwoningen gelijkvloers" houses=site.data.houses.appartementGelijkvloers %}
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+  {% include detail-table.html title="4 stapelwoningen eerste verdieping" houses=site.data.houses.appartementEersteVerdiep %}
+
+  {% include detail-table.html title="4 halfopenwoningen" houses=site.data.houses.woningenHalfOpen %}
+
+  {% include detail-table.html title="5 rijwoningen" houses=site.data.houses.woningenRij %}
+
+  <div class="row">
+    <div class="">
+    </div>
+  </div>
 
 </div>

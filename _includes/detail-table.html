@@ -1,0 +1,33 @@
+<h1>{{ include.title }}</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th class="d-none d-lg-block">Slaapkamers</th>
+      <th class="d-lg-none">Slpkm</th>
+      <th>Afmetingen</th>
+      <th>Prijs</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  {% for house in include.houses %}
+    <tr>
+     <th style="white-space: nowrap">{{ house.code }}</th>
+     <td>{{ house.rooms }}</td>
+     <td>{{ house.dimensions }}</td>
+     <td style="white-space: nowrap">
+      {% if house.price %}
+        € {{ house.price }}
+      {% else %}
+        &nbsp;
+      {% endif %}
+    </td>
+     <td style="text-align: right">
+      <a class="btn btn-info house-details" href="{{ house.slug | relative_url }}">
+        <span class="d-none d-lg-inline" style="margin-right: 6px">Details</span>
+        <i class="fa fa-arrow-right"></i>
+      </a>
+    </td>
+   </tr>
+  {% endfor %}
+</table>
