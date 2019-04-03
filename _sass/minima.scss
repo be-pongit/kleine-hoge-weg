@@ -1,15 +1,17 @@
 @charset "utf-8";
 
-.header {
-	.header-links {
-		display: flex;
-		justify-content: space-around;
+.menu-links {
+	display: flex;
+	justify-content: space-around;
 
-		a {
-			text-align: center;
-			flex: 1 1 auto;
-		}
+	a {
+		text-align: center;
+		flex: 1 1 auto;
 	}
+}
+
+.header {
+
 }
 
 

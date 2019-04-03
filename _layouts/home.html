@@ -2,7 +2,20 @@
 layout: default
 ---
 
-{%- include header.html -%}
+
+
+<div class="header">
+
+
+
+
+  <hr>
+
+  {%- include menu.html -%}
+
+  <hr>
+</div>
+
 
 <div class="home">
   <h1>Kleine Hoge Weg beschrijving</h1>
@@ -33,10 +46,4 @@ layout: default
   {% include detail-table.html title="4 halfopenwoningen" houses=site.data.houses.woningenHalfOpen %}
 
   {% include detail-table.html title="5 rijwoningen" houses=site.data.houses.woningenRij %}
-
-  <div class="row">
-    <div class="">
-    </div>
-  </div>
-
 </div>
