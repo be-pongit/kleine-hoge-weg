@@ -36,8 +36,19 @@ layout: default
     {% include house-icon-info.html icon="fa fa-calendar" desc="Bouwjaar: 2019" %}
   </div>
 
+  <hr>
+
+  <button type="button" class="btn btn-primary d-print-none" onclick="window.print();return false;">
+    <i class="fa fa-print"></i>
+    Printen
+  </button>
 
   <div class="row">
+    <div class="col-12 d-none d-print-flex">
+      <b style="margin-right: 8px">Url:</b><a href="#">{{ page.url | absolute_url }}</a>
+    </div>
+
+
     <div class="col-6">
       {% include house-indeling.html house=house %}
     </div>
@@ -54,5 +65,5 @@ layout: default
 </div>
 
 
-<hr>
+<hr class="d-print-none">
 {%- include menu.html -%}

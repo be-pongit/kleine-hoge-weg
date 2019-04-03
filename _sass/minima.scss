@@ -41,6 +41,10 @@
 		}
 	}
 
+	button.d-print-none {
+		float: right;
+	}
+
 	.house-icon-info {
 		text-align: center;
 		margin-bottom: 2rem;
@@ -78,6 +82,12 @@ footer {
 	text-align: center;
 	margin-top: 20px;
 	padding-bottom: 15px;
+	font-size: 0.9rem;
+
+	a.github {
+		float: right;
+		margin-right: 16px;
+	}
 }
 
 // Define defaults for each variable.
