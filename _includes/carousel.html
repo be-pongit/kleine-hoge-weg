@@ -1,3 +1,8 @@
+{% assign allHouses = site.data.houses.appartementGelijkvloers | concat: site.data.houses.appartementEersteVerdiep %}
+{% assign allHouses = allHouses | concat: site.data.houses.woningenHalfOpen %}
+{% assign allHouses = allHouses | concat: site.data.houses.woningenRij %}
+
+
 <div class="carousel-container">
 
   <div class="loading">
@@ -23,8 +28,26 @@
       <div class="gallery2">
         {% for img in site.data.carousel %}
           {% assign srcUrl = "/assets/carousel/" | append: img.src | relative_url %}
+          {% assign house = allHouses | where: "code", img.code | first %}
           <div class="item">
             <img src="{{ srcUrl }}" alt="">
+
+            <div class="overlay">
+              <div>
+                <a class="btn btn-info" href="{{ house.slug | relative_url }}">
+                  Details
+                </a>
+
+                <div>
+                  <i class="fa fa-phone"></i>
+                  <a class="phone" href="tel:{{ site.skype }}">{{ site.telephone }}</a>
+                </div>
+
+                <div>
+                  <i class="fa fa-map-marker"></i> {{ site.address.city }}
+                </div>
+              </div>
+            </div>
           </div>
         {% endfor %}
       </div>

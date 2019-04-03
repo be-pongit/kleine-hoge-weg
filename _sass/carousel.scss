@@ -1,4 +1,35 @@
+$overlay-color: whitesmoke;
+
 .carousel-container {
+	.gallery2 {
+		.phone {
+			color: $overlay-color;
+
+		}
+
+		.overlay {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 60px;
+			background: rgba(0, 0, 0, .6);
+			color: $overlay-color;
+
+			> div {
+				padding: 0.5rem;
+			}
+
+			a.btn {
+				float: right;
+				padding: 0.3rem;
+				margin-top: 4px;
+			}
+		}
+	}
+
+
+
 	* {
 		padding: 0;
 		margin: 0;
@@ -95,7 +126,7 @@
 	.synch-carousels .nav-arrows {
 		display: flex;
 		position: absolute;
-		bottom: 30px;
+		bottom: 17px;
 		left: 50%;
 		transform: translateX(-50%);
 	}
