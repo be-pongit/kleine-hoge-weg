@@ -99,10 +99,10 @@ appartementEersteVerdiep:
 woningenHalfOpen:
   - code: D 1
     dimensions:
-      desc: gelijkvloers 61 m², eerste verdiep 61 m² ( 3 slpkm ) + carport / tuin 104 m²
-      house: 0
-      garage: 0
-      garden: 0
+      desc: gelijkvloers 61 m², eerste verdiep 61 m² + carport / tuin 104 m²
+      floor0: 61
+      floor1: 61
+      garden: 104
     rooms: 3
     price:
     slug: half-open-woning-1
@@ -110,10 +110,10 @@ woningenHalfOpen:
 
   - code: D 2
     dimensions:
-      desc: gelijkvloers 61 m², eerste verdiep 61 m² ( 3 slpkm )  + carport / tuin 94 m²
-      house:
-      garage:
-      garden:
+      desc: gelijkvloers 61 m², eerste verdiep 61 m² + carport / tuin 94 m²
+      floor0: 61
+      floor1: 61
+      garden: 91
     rooms: 3
     price:
     slug: half-open-woning-2
@@ -121,10 +121,10 @@ woningenHalfOpen:
 
   - code: D 3
     dimensions:
-      desc: gelijkvloers 61 m², eerste verdiep 61 m² ( 3 slpkm )  + carport / tuin 94 m²
-      house:
-      garage:
-      garden:
+      desc: gelijkvloers 61 m², eerste verdiep 61 m² + carport / tuin 94 m²
+      floor0: 61
+      floor1: 61
+      garden: 94
     rooms: 3
     price:
     slug: half-open-woning-3
@@ -132,10 +132,10 @@ woningenHalfOpen:
 
   - code: D 4
     dimensions:
-      desc: gelijkvloers 61 m², eerste verdiep 61 m² ( 3 slpkm )  + carport / tuin 112 m²
-      house:
-      garage:
-      garden:
+      desc: gelijkvloers 61 m², eerste verdiep 61 m² + carport / tuin 112 m²
+      floor0: 61
+      floor1: 61
+      garden: 112
     rooms: 3
     price:
     slug: half-open-woning-4
@@ -147,10 +147,10 @@ woningenHalfOpen:
 woningenRij:
   - code: B 1
     dimensions:
-      desc: gelijkvloers 57,8 m², eerste verdiep 57,8 m² ( 2 slpkm )  + carport / tuin 48 m²
-      house:
-      garage:
-      garden:
+      desc: gelijkvloers 57,8 m², eerste verdiep 57,8 m² + carport / tuin 48 m²
+      floor0: 57.8
+      floor1: 57.8
+      garden: 48
     rooms: 2
     price:
     slug: rijwoning-1
@@ -158,10 +158,11 @@ woningenRij:
 
   - code: B 2
     dimensions:
-      desc: gelijkvloers 48 m², eerste verdiep 65 m² ( 3 slpkm )  + garage 19 m² + tuin 28 m²
-      house:
-      garage:
-      garden:
+      desc: gelijkvloers 48 m², eerste verdiep 65 m² + garage 19 m² + tuin 28 m²
+      floor0: 48
+      floor1: 65
+      garage: 19
+      garden: 28
     rooms: 3
     price:
     slug: rijwoning-2
@@ -169,10 +170,11 @@ woningenRij:
 
   - code: B 3
     dimensions:
-      desc: gelijkvloers 47 m², eerste verdiep 65 m² ( 3 slpkm )  + garage 19 m² + tuin 28 m²
-      house:
-      garage:
-      garden:
+      desc: gelijkvloers 47 m², eerste verdiep 65 m² + garage 19 m² + tuin 28 m²
+      floor0: 47
+      floor1: 65
+      garage: 19
+      garden: 28
     rooms: 3
     price:
     slug: rijwoning-3
@@ -180,10 +182,11 @@ woningenRij:
 
   - code: B 4
     dimensions:
-      desc: gelijkvloers 47 m², eerste verdiep 65 m² ( 3 slpkm )  + garage 19 m² + tuin 28 m²
-      house:
-      garage:
-      garden:
+      desc: gelijkvloers 47 m², eerste verdiep 65 m² + garage 19 m² + tuin 28 m²
+      floor0: 47
+      floor1: 65
+      garage: 19
+      garden: 28
     rooms: 3
     price:
     slug: rijwoning-4
@@ -191,10 +194,11 @@ woningenRij:
 
   - code: B 5
     dimensions:
-      desc: gelijkvloers 48 m², eerste verdiep 67 m² ( 3 slpkm )  + garage 19 m² + tuin 28 m²
-      house:
-      garage:
-      garden:
+      desc: gelijkvloers 48 m², eerste verdiep 67 m² + garage 19 m² + tuin 28 m²
+      floor0: 48
+      floor1: 67
+      garage: 19
+      garden: 28
     rooms: 3
     price:
     slug: rijwoning-5
