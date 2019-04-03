@@ -12,6 +12,8 @@
 	}
 }
 
+
+
 .home {
 	h1 {
 		font-size: 2rem;
@@ -29,8 +31,56 @@
 	}
 }
 
-footer {
 
+
+.house {
+	> h1:first-child {
+		text-transform: uppercase;
+
+		small {
+			display: block;
+			font-size: 0.9rem;
+			text-transform: none;
+		}
+	}
+
+	.house-icon-info {
+		text-align: center;
+		margin-bottom: 2rem;
+
+		.icon {
+			i {
+				display: block;
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+
+
+dl {
+	dt, dd {
+		display: inline;
+		margin: 0;
+	}
+
+	dt:after {
+		content: ':';
+	}
+
+	dd:after {
+		content: '\A';
+		white-space: pre;
+	}
+}
+
+
+
+footer {
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 15px;
 }
 
 // Define defaults for each variable.

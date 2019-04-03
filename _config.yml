@@ -17,7 +17,9 @@ title: Immo De Pennelekker
 email:
 description: >- # this means to ignore newlines until "baseurl:"
 
-baseurl: "/kleine-hoge-weg" # the subpath of your site, e.g. /blog
+# baseurl: "/kleine-hoge-weg" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://pongit.be" # the base hostname & protocol for your site, e.g. http://example.com
 url: "http://pongit.be" # the base hostname & protocol for your site, e.g. http://example.com
 
 telephone: 053/39 77 17

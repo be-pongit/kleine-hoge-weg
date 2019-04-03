@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+
+{% assign allHouses = site.data.houses.appartementGelijkvloers | concat: site.data.houses.appartementEersteVerdiep %}
+{% assign allHouses = allHouses | concat: site.data.houses.woningenHalfOpen %}
+{% assign allHouses = allHouses | concat: site.data.houses.woningenRij %}
+
+
+{% assign house = allHouses | where: "code", page.code | first %}
+
+<div class="house">
+  <h1>
+    {{ house.title }} te koop voor €{{ house.price }}
+    <small>
+      <span class="float-right">Ref: {{ house.code }}</span>
+
+      <i class="fa fa-location-arrow"></i>
+      {{ site.address.street }}, {{ site.address.city }}
+    </small>
+  </h1>
+
+  <div class="house-icon-info row">
+    {% assign desc = house.rooms | append: " slaapkamers" %}
+    {% include house-icon-info.html icon="fa fa-bed" desc=desc %}
+
+    {% include house-icon-info.html icon="fa fa-shower" desc="1 badkamer" %}
+
+    {% assign desc = house.dimensions.house | append: "m² woonopp" %}
+    {% include house-icon-info.html icon="fa fa-home" desc=desc %}
+
+    {% assign desc = house.dimensions.total | append: "m² grondopp" %}
+    {% include house-icon-info.html icon="fa fa-expand" desc=desc %}
+
+    {% include house-icon-info.html icon="fa fa-calendar" desc="Bouwjaar: 2019" %}
+  </div>
+
+
+  <div class="row">
+    <div class="col">
+      {% include house-indeling.html house=house %}
+    </div>
+    <div class="col">
+      {% include house-financieel.html house=house %}
+    </div>
+    <div class="col">
+      {% include house-overige.html house=house %}
+    </div>
+    <div class="col">
+      {% include house-comfort.html house=house %}
+    </div>
+  </div>
+</div>
+
+
+
+<div class="">
+
+</div>

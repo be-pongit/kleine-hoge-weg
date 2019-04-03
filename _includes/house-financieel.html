@@ -1,0 +1,21 @@
+{% assign house = include.house %}
+<h2>Financiële info</h2>
+<dl>
+  <dt>Prijs constructie</dt>
+  <dd>€205 000</dd>
+
+  <dt>Aankoop excl. kosten</dt>
+  <dd>€205 000</dd>
+
+  <dt>BTW constructie aan 21%</dt>
+  <dd>€45 000</dd>
+
+  <dt>Raming erelonen notaris</dt>
+  <dd>€2600</dd>
+
+  <dt>Raming aktekosten notaris</dt>
+  <dd>€525</dd>
+
+  <dt>Total aankoopprijs</dt>
+  <dd>€ {{ house.price }}</dd>
+</dl>
