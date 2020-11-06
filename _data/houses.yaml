@@ -55,7 +55,7 @@ appartementEersteVerdiep:
       garage: 26
       terras: 25
     rooms: 2 of 3
-    price: 15
+    price:
     slug: appartement-eerste-verdiep-1
     title: App. eerste verdieping
 
