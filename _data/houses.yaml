@@ -7,7 +7,7 @@ appartementGelijkvloers:
       garden: 55
       total: 188
     rooms: 2
-    price: ?
+    price:
     slug: appartement-gelijkvloers-1
     title: Gelijkvloers app.
 
@@ -18,7 +18,7 @@ appartementGelijkvloers:
       garage: 27
       garden: 57
     rooms: 2
-    price: ?
+    price:
     slug: appartement-gelijkvloers-2
     title: Gelijkvloers app.
 
@@ -29,7 +29,7 @@ appartementGelijkvloers:
       garage: 30
       garden: 56
     rooms: 2
-    price: ?
+    price:
     slug: appartement-gelijkvloers-3
     title: Gelijkvloers app.
 
